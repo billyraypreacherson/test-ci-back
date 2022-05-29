@@ -1,4 +1,4 @@
-name: CI Workflow
+name: CI Workflow v1
 on: [push]
 jobs:
   Primeiro-Job:
