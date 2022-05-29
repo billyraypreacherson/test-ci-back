@@ -15,4 +15,3 @@ jobs:
         
       - name: Status
         run: echo "Status: ${{ job.status }}."
-      
