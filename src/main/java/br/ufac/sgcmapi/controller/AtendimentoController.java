@@ -19,7 +19,7 @@ import br.ufac.sgcmapi.model.Atendimento;
 import br.ufac.sgcmapi.service.AtendimentoService;
 
 @RestController
-@RequestMapping("/atendimento")
+@RequestMapping("/atendimentos")
 public class AtendimentoController implements ICrudController<Atendimento> {
 
     private final AtendimentoService servico;
