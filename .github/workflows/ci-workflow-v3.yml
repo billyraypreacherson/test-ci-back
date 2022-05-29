@@ -18,7 +18,7 @@ jobs:
           java-version: '11'
           distribution: 'zulu'
       - name: Maven Compile/Test/Package
-        run: mvn --batch-mode package
+        run: mvn --batch-mode --activate-profiles prod package
       - name: Merge branch
         uses: devmasx/merge-branch@1.4.0
         with:
