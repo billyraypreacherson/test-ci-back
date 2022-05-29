@@ -1,7 +1,7 @@
 name: CI Workflow v1
 on: [push]
 jobs:
-  Primeiro-Job:
+  primeiro-job:
     runs-on: ubuntu-latest
     steps:    
       - run: echo "Primeiro passo"      
