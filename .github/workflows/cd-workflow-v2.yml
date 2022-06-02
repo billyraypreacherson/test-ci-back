@@ -11,12 +11,13 @@ jobs:
     name: CI Workflow Main
     uses: ./.github/workflows/ci-workflow-v2.yml
 
-  deploy-heroku:
+  deploy:
     needs: ci
     runs-on: ubuntu-latest
+    name: Deploy Heroku
     steps:
       - uses: actions/checkout@v3
-      - name: Deploy Heroku
+      - name: Deploy
         uses: akhileshns/heroku-deploy@v3.12.12
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
