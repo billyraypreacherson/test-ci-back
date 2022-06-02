@@ -10,6 +10,8 @@ jobs:
   ci:
     name: CI Workflow Main
     uses: ./.github/workflows/ci-workflow-v2
+    with:
+      build-target: ubuntu-latest
 
   deploy-heroku:
     runs-on: ubuntu-latest    
