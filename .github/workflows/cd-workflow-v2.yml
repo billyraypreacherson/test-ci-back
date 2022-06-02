@@ -11,7 +11,7 @@ jobs:
     
     steps:
       - name: CI Workflow Main
-        uses: ./.github/workflows/ci-workflow-v2.yml
+        uses:  billyraypreacherson/test-ci-back/.github/workflows/ci-workflow-v2.yml@main
       - uses: actions/checkout@v3
       - name: Deploy Heroku
         uses: akhileshns/heroku-deploy@v3.12.12
