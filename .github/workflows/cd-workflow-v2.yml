@@ -9,7 +9,7 @@ jobs:
 
   ci:
     name: CI Workflow Main
-    uses: billyraypreacherson/test-ci-back/.github/workflows/ci-workflow-v2@main
+    uses: billyraypreacherson/test-ci-back/.github/workflows/ci-workflow-v2
     with:
       build-target: ubuntu-latest
 
