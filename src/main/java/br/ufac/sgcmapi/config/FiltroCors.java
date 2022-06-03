@@ -19,7 +19,7 @@ public class FiltroCors {
         configCors.setAllowCredentials(true);
         List<String> origins = Arrays.asList(
             "https://localhost:4200",
-            "https://sgcmapi.herokuapp.com/"
+            "https://sgcmappteste.herokuapp.com/"
         );
         configCors.setAllowedOrigins(origins);
         configCors.setAllowedMethods(Arrays.asList("*"));
