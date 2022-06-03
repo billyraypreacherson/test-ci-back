@@ -17,11 +17,10 @@ public class FiltroCors {
 
         CorsConfiguration configCors = new CorsConfiguration();
         configCors.setAllowCredentials(true);
-        List<String> origins = Arrays.asList(
+        configCors.setAllowedOrigins(Arrays.asList(
             "https://localhost:4200",
             "https://sgcmappteste.herokuapp.com/"
-        );
-        configCors.setAllowedOrigins(origins);
+        ));
         configCors.setAllowedMethods(Arrays.asList("*"));
         configCors.setAllowedHeaders(Arrays.asList("*"));
 
